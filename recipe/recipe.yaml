@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.14.2"
+  version: "4.15.0"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/anyio/anyio-${{ version }}.tar.gz
-  sha256: cfa139f3ed1a23ee8f88a145ddb5ac7605b8bbfd8592baacd7ce3d8bb4313c7f
+  sha256: b5c620ed540725e2579c31b17bb995b3bf02c9281c9cace04c7d186380bab85e
 
 build:
   number: 0
