@@ -23,6 +23,8 @@ SKIPS = [
     "tcp_listener_retry_after_partial_failure",
     "tcp_listener_dualstack_disabled",
     "tcp_listener_same_port",
+    # https://github.com/conda-forge/anyio-feedstock/pull/88
+    "sourceless_install",
 ]
 
 SKIP_OR = " or ".join(SKIPS)
