@@ -10,11 +10,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/a/anyio/anyio-${{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/a/anyio/anyio-${{ version }}.tar.gz
   sha256: 9f28306018cbd6d329e64a36d58256edff76dd996fe423bc957326e578b82a94
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
@@ -26,10 +26,9 @@ requirements:
     - setuptools >=77
     - setuptools-scm >=6.4
   run:
-    - exceptiongroup >=1.0.2
     - idna >=2.8
     - python >=${{ python_min }}
-    - typing_extensions >=4.5
+    - typing_extensions >=4.16.0
   run_constraints:
     - trio >=0.32.0
     - uvloop >=0.22.1
